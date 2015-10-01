@@ -6,7 +6,7 @@ void ofxResolume::setupResolume(string ipRes,int portRes){//Setup for OSC Resolu
 
 void ofxResolume::rotateVideo(float rotateX,float rotateY,string layer, string clip){
 	//Rotate a video clip selected from Resolume in X Y
-		rotateX = ofMap(rotateX,0.0,3.0,0.0,1.0);//Remap values for RESOLUME
+		rotateX = ofMap(rotateX,0.0,100.0,0.0,1.0);//Remap values for RESOLUME
 		ofxOscMessage mr;
 		mr.setAddress("/layer1/video/rotatex/values");
 		mr.addFloatArg(rotateX);
@@ -18,6 +18,7 @@ void ofxResolume::rotateVideo(float rotateX,float rotateY,string layer, string c
 		resSender.sendMessage(mr);
 }
 
+//preuba trin bla
 void ofxResolume::show(int layer, int clip){
 	//Rotate a video clip selected from Resolume in X Y
 		ofxOscMessage mr;
