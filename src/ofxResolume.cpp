@@ -2,6 +2,7 @@
 
 void ofxResolume::setupResolume(string ipRes,int portRes){//Setup for OSC Resolume sender
 		resSender.setup(ipRes, portRes);
+		//hfda
 }
 
 void ofxResolume::rotateVideo(float rotateX,float rotateY,string layer, string clip){
